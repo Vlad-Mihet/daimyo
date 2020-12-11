@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-plugin-sass": "^2.7.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -23,9 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-hello-world.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-hello-world#readme",
+  "main": "gatsby-config.js",
+  "author": ""
 }
