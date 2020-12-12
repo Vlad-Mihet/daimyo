@@ -1,0 +1,254 @@
+@import "./variables";
+
+.whatMakesUsDifferent__container {
+  width: 100%;
+  min-height: 110vh;
+  height: fit-content;
+  position: relative;
+  background-color: #121212;
+
+  @keyframes animationgradienttitle {
+    0% {
+      background-position: 0 1600px;
+    }
+    100% {
+      background-position: 1600px 0;
+    }
+  }
+
+  .section__header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h3,
+    p {
+      font-family: $Montserrat;
+      text-align: center;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 80%;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #9f9f9f;
+
+      span {
+        background: -webkit-linear-gradient(
+          left,
+          #bcfefe,
+          #2d99ae,
+          #e350a8,
+          #bcfefe
+        );
+        background-size: 1600px 200px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation-duration: 5s;
+        animation-name: animationgradienttitle;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  .showcase__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+
+    .design__col {
+      flex: 1;
+      position: relative;
+
+      .jobPost__shocase__wrapper {
+        width: 70%;
+        margin: 0 auto;
+        padding: 2.5rem 2.5rem 5rem 2.5rem;
+        background-color: #333;
+        border-radius: 24px;
+
+        .empty__spaces__wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 1.5rem;
+
+          .empty__space {
+            padding: 0 2rem;
+            height: 1.25rem;
+            background-color: #666;
+            border-radius: 4px;
+
+            &:first-of-type {
+              padding: 0 3rem;
+              margin-right: 0.75rem;
+            }
+          }
+        }
+
+        .jobPosting__position,
+        .jobPosting__location {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 1.5rem;
+          background-color: #fff;
+          box-sizing: border-box;
+          padding: 0.65rem;
+          border-radius: 8px;
+          align-items: center;
+
+          svg {
+            width: 1rem !important;
+            height: 1rem !important;
+            color: #9f9f9f;
+            margin-right: 0.5rem;
+          }
+
+          span {
+            font-size: 1rem;
+            font-family: $Montserrat;
+            color: #333;
+            font-weight: 600;
+          }
+        }
+
+        .jobPosting__search {
+          height: 2.425rem;
+          background-color: #fa5876;
+          border-radius: 8px;
+          opacity: 0.85;
+          width: 50%;
+        }
+      }
+
+      .available__designers__container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 85%;
+        width: 65%;
+        left: 17.5%;
+
+        .availableDesigner__wrapper {
+          padding: 1.5rem;
+          background-color: #232323;
+          margin-bottom: 0.7rem;
+          border-radius: 24px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+
+          .designer__circleAvatar {
+            padding: 1.75rem;
+            background-color: #121212;
+            width: fit-content;
+            border-radius: 50%;
+            margin-right: 1rem;
+            border: 3px solid #9f9f9f;
+          }
+
+          .designer__info {
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            .emptyRow__1 {
+              margin-bottom: 0.5rem;
+              height: 0.9rem;
+              border-radius: 4px;
+              padding: 0 4rem;
+              width: fit-content;
+              background-color: #9f9f9f;
+            }
+
+            .emptyRow__2 {
+              display: flex;
+              width: fit-content;
+              flex-direction: row;
+
+              .empty__field {
+                height: 0.9rem;
+                padding: 0 2rem;
+                background-color: #9f9f9f;
+                border-radius: 4px;
+
+                &:first-of-type {
+                  margin-right: 0.5rem;
+                  padding: 0 1.35rem;
+                }
+              }
+            }
+          }
+
+          .designer__status {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .circle__status {
+              width: 0.85rem;
+              height: 0.85rem;
+              background-color: #22a45a;
+              border-radius: 50%;
+              margin-right: 0.5rem;
+            }
+
+            span {
+              font-weight: 700;
+              font-size: 0.85rem;
+              color: #d8d8d8;
+              text-transform: uppercase;
+              font-family: $Montserrat;
+            }
+          }
+        }
+      }
+    }
+
+    .textContent__col {
+      flex: 1;
+      font-family: $Montserrat;
+
+      .companiesOfferings {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #fa5876;
+      }
+
+      h4 {
+        color: #fff;
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 700;
+
+        &:first-of-type {
+          font-weight: 600;
+          margin-top: 3.5rem;
+        }
+      }
+
+      p {
+        margin-top: 4.25rem;
+        font-weight: 500;
+        font-size: 1.15rem;
+        color: #d8d8d8;
+      }
+    }
+  }
+}
