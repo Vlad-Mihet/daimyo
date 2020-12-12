@@ -101,6 +101,27 @@
     }
   }
 
+  @keyframes animationgradienttitle {
+    0% {
+      background-position: 0 1600px;
+    }
+    100% {
+      background-position: 1600px 0;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   div {
     overflow: hidden;
     height: fit-content;
@@ -108,6 +129,113 @@
       width: 10rem;
       height: auto;
       border-radius: 0.35vw;
+    }
+  }
+
+  // #F03F4F #f94c8d
+
+  .intro__header {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    overflow: unset;
+    height: 30vh;
+    z-index: 100;
+    font-size: 2.65rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      align-self: flex-end;
+      font-family: $Montserrat;
+      color: #fff;
+
+      span {
+        margin-left: 1.65rem;
+        display: block;
+        background: -webkit-linear-gradient(
+          left,
+          #f03f4f,
+          #f94c8d,
+          #fa5876,
+          #f03f4f
+        );
+        background-size: 1600px 200px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation-duration: 3s;
+        animation-name: animationgradienttitle;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    p {
+      text-align: center;
+      align-self: center;
+      width: 70%;
+      font-family: $Montserrat;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #9f9f9f;
+
+      span {
+        &:first-of-type {
+          background: -webkit-linear-gradient(
+            left,
+            #bcfefe,
+            #2d99ae,
+            #e350a8,
+            #bcfefe
+          );
+          background-size: 1600px 200px;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation-duration: 3s;
+          animation-name: animationgradienttitle;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &:last-of-type {
+          background: -webkit-linear-gradient(
+            left,
+            #fee686,
+            #ffd273,
+            #89b449,
+            #fee686
+          );
+          background-size: 1600px 200px;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation-duration: 3s;
+          animation-name: animationgradienttitle;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+
+    button {
+      font-family: $Montserrat;
+      font-size: 1.25rem;
+      font-weight: 700;
+      width: fit-content;
+      margin: 0 auto;
+      background-color: #fa5876;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+
+      &:hover {
+        cursor: pointer;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+      }
     }
   }
 

@@ -4,6 +4,18 @@ import styles from "../styles/Hero.module.scss"
 export default function Hero() {
   return (
     <div className={styles.hero__container}>
+      <div className={styles.intro__header}>
+        <h3>
+          Find Your Next <span>Rockstar Designer</span>
+        </h3>
+        <p>
+          Hiring your next great <span>artist</span> or <span>animator</span>{" "}
+          can be challenging. Sign up to create Job Posts or search Daimyo, a
+          growing artists community of pre-qualified, professional creative
+          talent.
+        </p>
+        <button>Join</button>
+      </div>
       <div data-speed="5" className={styles.hero__image__wrapper1}>
         <img src={require(`../images/1.jpg`)} alt="1" />
       </div>
