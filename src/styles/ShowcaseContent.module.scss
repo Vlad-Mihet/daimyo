@@ -2,8 +2,7 @@
 
 .whatMakesUsDifferent__container {
   width: 100%;
-  min-height: 110vh;
-  height: fit-content;
+  min-height: 200vh;
   position: relative;
   background-color: #121212;
 
@@ -17,10 +16,7 @@
   }
 
   .section__header {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     h3,
     p {
       font-family: $Montserrat;
@@ -37,7 +33,7 @@
 
     p {
       margin: 0 auto;
-      width: 80%;
+      width: 50%;
       font-size: 1.5rem;
       font-weight: 500;
       color: #9f9f9f;
@@ -63,13 +59,11 @@
   }
 
   .showcase__content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 65%;
+    margin-top: 20vh;
 
     .design__col {
       flex: 1;
@@ -239,15 +233,86 @@
 
         &:first-of-type {
           font-weight: 600;
-          margin-top: 3.5rem;
+          margin-top: 3rem;
         }
       }
 
       p {
-        margin-top: 4.25rem;
+        margin-top: 3.5rem;
         font-weight: 500;
-        font-size: 1.15rem;
+        font-size: 1.4rem;
         color: #d8d8d8;
+      }
+    }
+  }
+
+  .showcase__content__section2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 60vh;
+    width: 70%;
+    margin-left: 20%;
+
+    .section2__textContent__col {
+      margin-right: 5%;
+      width: 40%;
+      font-family: $Montserrat;
+
+      .companiesOfferings {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #bcfefe;
+      }
+
+      h4 {
+        color: #fff;
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 700;
+
+        &:first-of-type {
+          font-weight: 600;
+          margin-top: 3rem;
+        }
+      }
+
+      p {
+        margin-top: 3.5rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #d8d8d8;
+      }
+    }
+
+    .section2__cards__col {
+      width: 60%;
+
+      .cardsWrapper {
+        display: flex;
+        flex-direction: row;
+
+        .cardsCol {
+          display: flex;
+          flex-direction: column;
+          font-family: $Montserrat;
+          flex: 1;
+          margin-right: 0.75rem;
+
+          &:nth-of-type(2) {
+            margin-top: 30px;
+          }
+
+          &:nth-of-type(3) {
+            margin-top: -30px;
+          }
+
+          &:last-of-type {
+            margin-top: 30px;
+          }
+        }
       }
     }
   }

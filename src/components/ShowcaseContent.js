@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../styles/ShowcaseContent.module.scss"
+import MessageCard from "./MessageCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
@@ -87,6 +88,39 @@ export default function ShowcaseContent() {
             candidates, ensuring you find the most qualified talent for your
             creative team.
           </p>
+        </div>
+      </div>
+      <div className={styles.showcase__content__section2}>
+        <div className={styles.section2__textContent__col}>
+          <span className={styles.companiesOfferings}>
+            For Companies, We Offer
+          </span>
+          <h4>A Growing Pool of</h4>
+          <h4>Top Talent</h4>
+          <p>
+            Save time by searching our Artists Community Database for
+            pre‑qualified, top‑tier creative professionals, actively looking for
+            work.
+          </p>
+        </div>
+        <div className={styles.section2__cards__col}>
+          <div className={styles.cardsWrapper}>
+            <div className={styles.cardsCol}>
+              <MessageCard />
+              <MessageCard sent={true} />
+            </div>
+            <div className={styles.cardsCol}>
+              <MessageCard sent={true} />
+              <MessageCard />
+            </div>
+            <div className={styles.cardsCol}>
+              <MessageCard />
+              <MessageCard sent={true} />
+            </div>
+            <div className={styles.cardsCol}>
+              <MessageCard sent={true} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
