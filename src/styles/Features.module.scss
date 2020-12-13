@@ -1,0 +1,212 @@
+@import "./variables";
+
+.features__container {
+  background-color: #121212;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  font-family: $Montserrat;
+  color: #f4f4f4;
+
+  .content__wrapper {
+    position: absolute;
+    width: 65%;
+    height: 70vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .keyFeatures__container {
+      h4 {
+        margin: 0;
+        margin-bottom: 2.5rem;
+        font-size: 1.25rem;
+      }
+
+      .keyFeatures__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .featureBlock {
+          box-sizing: border-box;
+          flex: 1;
+          padding-right: 2rem;
+          .block__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            svg {
+              width: 2rem !important;
+              height: 2rem !important;
+              object-fit: contain;
+              margin-right: 0.75rem;
+            }
+
+            h5 {
+              font-size: 1rem;
+              font-weight: 700;
+              margin: 0;
+            }
+          }
+
+          p {
+            margin: 0;
+            color: #d8d8d8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.35rem;
+          }
+
+          &:first-of-type {
+            svg {
+              filter: drop-shadow(2px 2px rgb(250, 88, 118));
+            }
+          }
+
+          &:nth-of-type(2) {
+            svg {
+              filter: drop-shadow(2px 2px #9543a7);
+            }
+          }
+
+          &:last-of-type {
+            svg {
+              filter: drop-shadow(2px 2px #005059);
+            }
+          }
+        }
+      }
+    }
+
+    .useGuide__container {
+      h4,
+      h5 {
+        margin: 0;
+      }
+
+      h4 {
+        margin: 0;
+        margin-bottom: 2.5rem;
+        font-size: 1.25rem;
+      }
+
+      .useGuide__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .useGuide__block {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding: 1.75rem 2.5rem;
+          border: 1px solid #6f6f6f;
+          position: relative;
+
+          .block__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            svg {
+              width: 2rem !important;
+              height: 2rem !important;
+              object-fit: contain;
+              margin-right: 0.75rem;
+            }
+
+            h5 {
+              font-size: 1rem;
+              font-weight: 700;
+              margin: 0;
+            }
+          }
+
+          p {
+            margin: 0;
+            margin-top: auto;
+            color: #d8d8d8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.35rem;
+          }
+
+          .block__count {
+            position: absolute;
+            left: -1.25rem;
+            top: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            font-weight: 700;
+            color: #000;
+          }
+
+          &:first-of-type {
+            svg {
+              filter: drop-shadow(2px 2px #7238c9);
+            }
+          }
+
+          &:nth-of-type(2) {
+            border-left: none;
+            border-right: none;
+            svg {
+              filter: drop-shadow(2px 2px #a6191f);
+            }
+          }
+
+          &:last-of-type {
+            svg {
+              filter: drop-shadow(2px 2px #0b7ef3);
+            }
+          }
+        }
+      }
+
+      .getStarted {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+
+        span {
+          font-weight: 600;
+          font-size: 1.35rem;
+        }
+
+        svg {
+          width: 1.2rem !important;
+          height: 1.2rem !important;
+          object-fit: contain;
+          margin-left: 0.25rem;
+        }
+
+        &:hover {
+          color: #dc536c;
+          cursor: pointer;
+
+          svg {
+            transform: translateX(12px);
+            transition: all 0.25s ease-out;
+          }
+
+          transition: all 0.25s ease-out;
+        }
+      }
+    }
+  }
+}
