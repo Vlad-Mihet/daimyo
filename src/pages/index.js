@@ -6,6 +6,7 @@ import About from "../components/About"
 import ShowcaseContent from "../components/ShowcaseContent"
 import "normalize.css"
 import Features from "../components/Features"
+import Analytics from "../components/Analytics"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <ShowcaseContent />
       <Features />
+      <Analytics />
       <Footer />
     </div>
   )
