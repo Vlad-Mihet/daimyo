@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import About from "../components/About"
 import ShowcaseContent from "../components/ShowcaseContent"
 import "normalize.css"
+import Features from "../components/Features"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <ShowcaseContent />
+      <Features />
       <Footer />
     </div>
   )

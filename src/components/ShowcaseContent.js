@@ -2,7 +2,11 @@ import React from "react"
 import styles from "../styles/ShowcaseContent.module.scss"
 import MessageCard from "./MessageCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSearch, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import {
+  faSearch,
+  faMapMarkerAlt,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons"
 
 export default function ShowcaseContent() {
   return (
@@ -93,7 +97,7 @@ export default function ShowcaseContent() {
       <div className={styles.showcase__content__section2}>
         <div className={styles.section2__textContent__col}>
           <span className={styles.companiesOfferings}>
-            For Companies, We Offer
+            For Companies, We Provide
           </span>
           <h4>A Growing Pool of</h4>
           <h4>Top Talent</h4>
@@ -121,6 +125,86 @@ export default function ShowcaseContent() {
               <MessageCard sent={true} />
             </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.showcase__content__section3}>
+        <div className={styles.section3__animation__col}>
+          <div className={styles.cards__wrapper}>
+            <div className={styles.firstCardWrapper}>
+              <div className={styles.firstCardAvatar}>
+                <img src={require("../images/samurai.png")} />
+              </div>
+              <div className={styles.firstCard}>
+                <div className={styles.firstCard__fillerRow__wrapper}>
+                  <div className={styles.filler__space}></div>
+                  <div className={styles.filler__space}></div>
+                  <div className={styles.filler__space}></div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.secondCardWrapper}>
+              <div className={styles.secondCardAvatar}></div>
+              <div className={styles.secondCard}>
+                <div className={styles.secondCard__content}>
+                  <div className={styles.card__info}>
+                    <span>John Doe</span>
+                    <div className={styles.fillerSpace__wrapper}>
+                      <div className={styles.fillerSpace}></div>
+                      <div className={styles.fillerSpace}></div>
+                    </div>
+                    <p className={styles.card__viewAnswers__button}>
+                      View Answers
+                    </p>
+                  </div>
+                  <div className={styles.card__status}>
+                    <FontAwesomeIcon icon={faCheck} />
+                    <span>Accepted</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.lastCardsWrapper}>
+              <div className={styles.lastCards__cardWrapper}>
+                <div className={styles.card__cardAvatar}></div>
+                <div className={styles.card__cardDetails__filler}>
+                  <div className={styles.firstFillerRow}></div>
+                  <div className={styles.secondFillerRow}>
+                    <div className={styles.secondFillerRow__filler}></div>
+                    <div className={styles.secondFillerRow__filler}></div>
+                  </div>
+                </div>
+                <div className={styles.card__status}>
+                  <FontAwesomeIcon icon={faCheck} />
+                  <span>Accepted</span>
+                </div>
+              </div>
+              <div className={styles.lastCards__cardWrapper}>
+                <div className={styles.card__cardAvatar}></div>
+                <div className={styles.card__cardDetails__filler}>
+                  <div className={styles.firstFillerRow}></div>
+                  <div className={styles.secondFillerRow}>
+                    <div className={styles.secondFillerRow__filler}></div>
+                    <div className={styles.secondFillerRow__filler}></div>
+                  </div>
+                </div>
+                <div className={styles.card__status}>
+                  <FontAwesomeIcon icon={faCheck} />
+                  <span>Accepted</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.section3__textContent__col}>
+          <span className={styles.companiesOfferings}>
+            For Companies, We Created
+          </span>
+          <h4>A Streamlined</h4>
+          <h4>Hiring Process</h4>
+          <p>
+            Save time by quickly moving through the recruiting process and
+            hiring your new team member.
+          </p>
         </div>
       </div>
     </div>
