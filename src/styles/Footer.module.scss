@@ -39,10 +39,12 @@
           text-align: left;
           font-weight: 700;
           font-size: 1.65rem;
-          color: #666;
+          color: #f8f8f8;
+          text-shadow: 1.25px 1.25px #fa5876;
 
           &:hover {
-            color: #666;
+            color: #f8f8f8;
+            text-shadow: 1.25px 1.25px #fa5876;
             cursor: text;
           }
         }
