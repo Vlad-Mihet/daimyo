@@ -8,7 +8,7 @@ class Chart extends React.Component {
       chartData: {
         datasets: [
           {
-            data: [20, 14, 13, 9, 7, 5, 5, 5, 4, 4, 14],
+            data: [20, 18, 16, 12, 9, 8, 7, 6, 4],
             backgroundColor: [
               "rgba(4, 232, 36, 0.8)",
               "rgba(4, 232, 36, 0.7)",
@@ -20,7 +20,6 @@ class Chart extends React.Component {
               "rgba(19, 138, 54, 0.6)",
               "rgba(19, 138, 54, 0.6)",
               "rgba(4, 232, 36, 0.4)",
-              "rgba(4, 232, 36, 0.3)",
             ],
           },
         ],

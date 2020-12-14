@@ -1,1 +1,73 @@
 @import "./variables";
+
+.footer__wrapper {
+  width: 100%;
+  background-color: #121212;
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $Montserrat;
+    border-top: 1px solid #666;
+
+    .footer__leftCol {
+      width: 45%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .brand__wrapper {
+        flex: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: contain;
+          margin-right: 0.5rem;
+        }
+
+        span {
+          text-align: left;
+          font-weight: 700;
+          font-size: 1.65rem;
+          color: #666;
+
+          &:hover {
+            color: #666;
+            cursor: text;
+          }
+        }
+      }
+
+      span {
+        text-align: center;
+        flex: 4;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #666;
+
+        &:hover {
+          cursor: pointer;
+          color: #999;
+        }
+      }
+    }
+
+    .footer__rightCol {
+      span {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+  }
+}

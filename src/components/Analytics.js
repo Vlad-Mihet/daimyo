@@ -5,7 +5,7 @@ import Chart from "./DoughnutChart"
 import DataLabel from "./DataLabel"
 
 export default function Analytics() {
-  var percentages = [20, 14, 13, 9, 7, 5, 5, 5, 4, 4, 14]
+  var percentages = [20, 18, 16, 12, 9, 8, 7, 6, 4]
   var categories = [
     "Web Designer",
     "Graphic Designer",
@@ -16,8 +16,6 @@ export default function Analytics() {
     "Industrial Product Designer",
     "Fashion Designer",
     "UI/UX Designer",
-    "Architectural Designer",
-    "Other",
   ]
   return (
     <div className={styles.analytics__container}>
