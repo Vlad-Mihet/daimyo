@@ -10,6 +10,7 @@ import Analytics from "../components/Analytics"
 import Status from "../components/Status"
 import Subscription from "../components/Subscription.js"
 import JoinUs from "../components/JoinUs"
+import JoinModal from "../components/JoinModal"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Status />
       <Subscription />
       <JoinUs />
+      {/* <JoinModal /> */}
       <Footer />
     </div>
   )

@@ -1,0 +1,10 @@
+@import "./variables";
+
+.joinModal__wrapper {
+  box-sizing: border-box;
+  padding: 2rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
