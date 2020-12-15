@@ -3,7 +3,7 @@ import styles from "../styles/JoinUs.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
-export default function JoinUs() {
+export default function JoinUs({ setShowModal }) {
   return (
     <div className={styles.joinUs__container}>
       <div className={styles.joinUs__wrapper}>
@@ -13,7 +13,7 @@ export default function JoinUs() {
           digital talent. Contact our recruiting experts with questions and
           comments
         </p>
-        <div className={styles.signupButton}>
+        <div className={styles.signupButton} onClick={() => setShowModal(true)}>
           <span>SIGN UP</span>
           <FontAwesomeIcon icon={faChevronRight} />
         </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../styles/Hero.module.scss"
 
-export default function Hero() {
+export default function Hero({ setShowModal }) {
   return (
     <div className={styles.hero__container}>
       <div className={styles.intro__header}>
@@ -14,7 +14,7 @@ export default function Hero() {
           growing artists community of pre-qualified, professional creative
           talent.
         </p>
-        <button>Join</button>
+        <button onClick={() => setShowModal(true)}>Join</button>
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper1}>
         <img src={require(`../images/1.jpg`)} alt="1" />

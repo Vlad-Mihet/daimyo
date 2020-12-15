@@ -2,14 +2,14 @@ import React from "react"
 import styles from "../styles/Status.module.scss"
 import StatusCard from "./StatusCard.js"
 
-export default function Status() {
+export default function Status({ setupQuickApply }) {
   var categories = [
     "Web Designer",
     "Graphic Designer",
     "Game Designer",
     "Interior Designer",
     "Animation Designer",
-    "Motion Graphics Designers",
+    "Motion Graphics Designer",
     "Industrial Product Designer",
     "Fashion Designer",
     "UI/UX Designer",
@@ -26,6 +26,7 @@ export default function Status() {
             key={index}
             positionName={category}
             positionDescription={category}
+            setupQuickApply={setupQuickApply}
           />
         ))}
       </div>

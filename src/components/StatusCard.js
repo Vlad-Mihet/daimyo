@@ -1,7 +1,11 @@
 import React from "react"
 import styles from "../styles/Status.module.scss"
 
-export default function StatusCard({ positionName, positionDescription }) {
+export default function StatusCard({
+  positionName,
+  positionDescription,
+  setupQuickApply,
+}) {
   return (
     <div className={styles.statusCard__wrapper}>
       <div className={styles.statusCard__content}>
@@ -15,11 +19,19 @@ export default function StatusCard({ positionName, positionDescription }) {
           <p className={styles.positionDescription}>{positionDescription}</p>
         </div>
         <div className={styles.application__wrapper}>
-          <span className={styles.numPositionsAvailable}>5</span>
-          <div className={styles.application__availablePositions}>
-            <span>Available</span>
-            <span>Positions</span>
+          <div className={styles.position__wrapper}>
+            <span className={styles.numPositionsAvailable}>5</span>
+            <div className={styles.application__availablePositions}>
+              <span>Available</span>
+              <span>Positions</span>
+            </div>
           </div>
+          <button
+            className={styles.applyNowButton}
+            onClick={() => setupQuickApply(positionName)}
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>
