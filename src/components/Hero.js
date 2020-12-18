@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../styles/Hero.module.scss"
+import { Link } from "gatsby"
 
 export default function Hero({ setShowModal }) {
   return (
@@ -14,7 +15,9 @@ export default function Hero({ setShowModal }) {
           growing artists community of pre-qualified, professional creative
           talent.
         </p>
-        <button onClick={() => setShowModal(true)}>Join</button>
+        <Link to="https://forms.gle/6VPSNwjiuwVM9oYz8" target="_blank">
+          Join
+        </Link>
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper1}>
         <img src={require(`../images/1.jpg`)} alt="1" />

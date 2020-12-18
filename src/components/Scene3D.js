@@ -1,17 +1,10 @@
-import React, { useRef, useState, useMemo } from "react"
-import { Canvas, useFrame } from "react-three-fiber"
-import * as THREE from "three"
-import face from "../images/face_c.png"
+import React from "react"
+import { OBJModel } from "react-3d-viewer"
 
-export default function Scene3D() {
-  const mesh = useRef()
-
-  const [active, setActive] = useState(false)
-
-  useFrame(() => {
-    mesh.current.rotation.x = mesh.current.rotation.y += 0.01
-  })
-
-  const texture = useMemo(() => new THREE.TextureLoader().load(face), [])
-  return <Scene3D />
+export default function Scene3d() {
+  return (
+    <div style={{ backgroundColor: "black" }}>
+      <OBJModel src="../3d_models/Monokuma/Monokuma.obj" texPath="" />
+    </div>
+  )
 }
