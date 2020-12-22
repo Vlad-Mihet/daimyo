@@ -169,3 +169,34 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .status__container {
+    min-height: 385vh;
+    padding: 0;
+
+    .status__header {
+      width: 95%;
+      text-align: center;
+      h3 {
+        margin: auto;
+        font-size: 1.9rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .cards__wrapper {
+      width: 95%;
+
+      .statusCard__wrapper {
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none;
+
+        &:nth-of-type(2n) {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

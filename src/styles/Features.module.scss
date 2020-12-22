@@ -210,3 +210,41 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .features__container {
+    min-height: 270vh;
+    .content__wrapper {
+      width: 87.5%;
+      height: fit-content;
+      .keyFeatures__container {
+        .keyFeatures__row {
+          flex-direction: column;
+
+          .featureBlock {
+            padding-right: 0;
+            margin-bottom: 5vh;
+          }
+        }
+      }
+
+      .useGuide__container {
+        margin: 0 auto;
+        .useGuide__row {
+          flex-direction: column;
+
+          .useGuide__block {
+            border: 1px solid #6f6f6f;
+
+            &:nth-of-type(2) {
+              border-left: 1px solid #6f6f6f;
+              border-right: 1px solid #6f6f6f;
+              border-top: none;
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

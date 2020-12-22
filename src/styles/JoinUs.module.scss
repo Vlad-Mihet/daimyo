@@ -1,7 +1,7 @@
 @import "./variables";
 
 .joinUs__container {
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
   background-color: #121212;
   position: relative;
@@ -71,6 +71,26 @@
       svg {
         width: 1rem !important;
         height: 1rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .joinUs__container {
+    min-height: 100vh;
+    .joinUs__wrapper {
+      width: 95%;
+      bottom: unset;
+      top: 45%;
+
+      h4 {
+        font-size: 2rem;
+      }
+
+      p {
+        width: 95%;
+        font-size: 1.1rem;
       }
     }
   }

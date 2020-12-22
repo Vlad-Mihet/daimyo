@@ -28,9 +28,9 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Header />
-      <Hero setShowModal={setShowModal} />
+      <Hero />
       {/* <Scene3D /> */}
       <About />
       <ShowcaseContent />
@@ -38,14 +38,8 @@ export default function Home() {
       <Analytics />
       <Status setupQuickApply={setupQuickApply} />
       <Subscription />
-      <JoinUs setShowModal={setShowModal} />
+      <JoinUs />
       <Footer />
-      {showModal && (
-        <JoinModal
-          setShowModal={setShowModal}
-          position={selectedQuickPosition}
-        />
-      )}
     </div>
   )
 }

@@ -84,3 +84,44 @@
     color: #c8c8c8;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .analytics__container {
+    min-height: 240vh;
+    .mapData__wrapper {
+      width: 95%;
+      margin: 0 auto;
+      position: relative;
+      left: unset;
+      top: unset;
+
+      span {
+        width: 100%;
+      }
+    }
+
+    .doughnutData__wrapper {
+      height: 10vh;
+      width: 80%;
+      top: 102.5vh;
+      bottom: unset;
+      left: 10%;
+    }
+
+    .doughnutChart__dataWrapper {
+      right: unset;
+      bottom: 30vh;
+      left: 15%;
+      width: 95%;
+    }
+
+    .breakdownBy {
+      width: 95%;
+      left: 50%;
+      margin: 0 auto;
+      bottom: unset;
+      top: 93.5vh;
+      text-align: center;
+    }
+  }
+}

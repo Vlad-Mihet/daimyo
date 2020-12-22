@@ -29,6 +29,7 @@ export default function Analytics() {
       <div className={styles.doughnutChart__dataWrapper}>
         {percentages.map((x, index) => (
           <DataLabel
+            key={index}
             index={index}
             percentage={percentages[index]}
             category={categories[index]}
