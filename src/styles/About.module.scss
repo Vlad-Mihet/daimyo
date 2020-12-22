@@ -315,9 +315,16 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .about__container {
+    min-height: 120vh;
     .about__wrapper {
-      position: relative;
+      width: 95%;
+      top: 50%;
+      position: absolute;
       flex-direction: column;
+
+      h3 {
+        text-align: center;
+      }
 
       .animationColumn {
         margin: 0;
@@ -408,33 +415,87 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .about__container {
-    min-height: 120vh;
-    .about__wrapper {
-      width: 95%;
-      top: 50%;
-      position: absolute;
-      flex-direction: column;
+    min-height: 160vh;
 
-      h3 {
-        text-align: center;
+    .about__wrapper {
+      flex-direction: column;
+      width: 95%;
+
+      .animationColumn {
+        margin-left: -2.5%;
+        margin-top: 10vh;
+
+        .cardContainer {
+          .card__author {
+            width: 85px;
+            height: 85px;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+
+          .card {
+            padding: 3rem 4rem 4rem 4rem;
+          }
+
+          .offerPreview__card {
+            top: 120%;
+            padding: 1rem 2.25rem 2rem 2.25rem;
+
+            .previewCard__content {
+              p {
+                font-size: 1.1rem;
+              }
+
+              .reviewCard__rowWrapper {
+                &:first-of-type {
+                  .blurredContent {
+                    width: 125px;
+                  }
+                }
+
+                &:nth-of-type(2) {
+                  .blurredContent:first-of-type {
+                    width: 85px;
+                  }
+                }
+
+                &:last-of-type {
+                  .blurredContent:last-of-type {
+                    width: 120px;
+                  }
+                }
+              }
+            }
+          }
+
+          .commentsContainer {
+            top: 210%;
+            left: 72.5%;
+
+            .commentWrapper {
+              padding: 0.5rem 0.65rem;
+            }
+          }
+        }
       }
     }
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .about__wrapper {
-    flex-direction: column;
-  }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .about__wrapper {
-    flex-direction: column;
+  .about__container {
+    min-height: 120vh;
+    .about__wrapper {
+      top: 35%;
+      flex-direction: column;
+    }
   }
 }
 

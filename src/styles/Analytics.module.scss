@@ -16,7 +16,6 @@
 
     span {
       text-align: center;
-      width: 100%;
       font-family: $Montserrat;
       font-size: 2.75rem;
       font-weight: 600;
@@ -121,6 +120,42 @@
       margin: 0 auto;
       bottom: unset;
       top: 93.5vh;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .analytics__container {
+    min-height: 230vh;
+    .mapData__wrapper {
+      width: 95%;
+      left: 2.5%;
+
+      span {
+        width: 100%;
+      }
+    }
+
+    .doughnutData__wrapper {
+      width: 70%;
+      left: 15%;
+      bottom: 0;
+      top: 115vh;
+    }
+
+    .doughnutChart__dataWrapper {
+      bottom: unset;
+      top: 185vh;
+      width: 95%;
+      right: unset;
+      left: 25%;
+    }
+
+    .breakdownBy {
+      bottom: unset;
+      top: 100vh;
+      font-size: 2.25rem;
       text-align: center;
     }
   }

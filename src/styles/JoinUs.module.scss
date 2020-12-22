@@ -95,3 +95,14 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .joinUs__container {
+    min-height: 70vh;
+    .joinUs__wrapper {
+      width: 95%;
+      bottom: unset;
+      top: 20vh;
+    }
+  }
+}

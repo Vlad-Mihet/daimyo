@@ -92,3 +92,22 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .footer__wrapper {
+    .footer {
+      padding: 0.75rem 0.5rem;
+      .footer__leftCol {
+        width: 100%;
+        .brand__wrapper {
+          span {
+            display: inline;
+          }
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
