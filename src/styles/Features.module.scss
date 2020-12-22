@@ -262,3 +262,58 @@
     }
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .features__container {
+    min-height: 80vh;
+    .content__wrapper {
+      top: 50%;
+
+      .keyFeatures__container {
+        h4 {
+          font-size: 1.75rem;
+        }
+
+        .keyFeatures__row {
+          .featureBlock {
+            .block__wrapper {
+              h5 {
+                font-size: 1.25rem;
+              }
+            }
+
+            p {
+              font-size: 1.15rem;
+            }
+
+            &:nth-of-type(2) {
+              p {
+                padding-top: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+
+      .useGuide__container {
+        h4 {
+          font-size: 1.75rem;
+        }
+
+        .useGuide__row {
+          .useGuide__block {
+            .block__wrapper {
+              h5 {
+                font-size: 1.25rem;
+              }
+            }
+
+            p {
+              font-size: 1.15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

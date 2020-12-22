@@ -501,8 +501,103 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .about__wrapper {
-    flex-direction: column;
+  .about__container {
+    .about__wrapper {
+      flex-direction: column;
+
+      .textColumn {
+        h3 {
+          font-size: 3.25rem;
+        }
+
+        p {
+          font-size: 1.85rem;
+        }
+      }
+
+      .animationColumn {
+        .cardContainer {
+          .card__author {
+            width: 125px;
+            height: 125px;
+
+            img {
+              width: 85px;
+              height: 85px;
+            }
+          }
+
+          .card {
+            padding: 4rem 5rem 6rem 5rem;
+
+            p {
+              font-size: 2rem;
+            }
+
+            .card__rating {
+              span:not(.doubleCheckedSpan) {
+                font-size: 1.4rem;
+              }
+
+              .doubleCheck__container {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          .offerPreview__card {
+            padding: 2rem 3rem;
+
+            .previewCard__content {
+              p {
+                font-size: 2rem;
+              }
+
+              .reviewCard__rowWrapper {
+                &:first-of-type {
+                  .blurredContent {
+                    width: 145px;
+                  }
+                }
+
+                &:nth-of-type(2) {
+                  .blurredContent:first-of-type {
+                    width: 115px;
+                  }
+                }
+
+                &:last-of-type {
+                  .blurredContent:last-of-type {
+                    width: 150px;
+                  }
+                }
+
+                .blurredContent {
+                  height: 1.65rem;
+                  border-radius: 6px;
+                  opacity: 0.85;
+                  margin-left: 0.85rem;
+                }
+              }
+            }
+          }
+          .commentsContainer {
+            top: 205%;
+
+            .commentWrapper {
+              padding: 0.65rem 0.8rem;
+
+              .emptyContentSpaceWrapper {
+                .fillerEmptySpace {
+                  height: 1.9rem;
+                  border-radius: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

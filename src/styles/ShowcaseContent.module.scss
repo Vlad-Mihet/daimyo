@@ -982,8 +982,68 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .about__wrapper {
-    flex-direction: column;
+  .whatMakesUsDifferent__container {
+    min-height: 330vh;
+    box-sizing: border-box;
+    padding-top: 5vh;
+
+    .section__header {
+      h3 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.75rem;
+      }
+    }
+
+    .showcase__content {
+      .textContent__col {
+        .companiesOfferings {
+          font-size: 1.15rem;
+        }
+
+        h4 {
+          font-size: 3.25rem;
+        }
+
+        p {
+          font-size: 1.65rem;
+        }
+      }
+    }
+
+    .showcase__content__section2 {
+      .section2__textContent__col {
+        .companiesOfferings {
+          font-size: 1.15rem;
+        }
+
+        h4 {
+          font-size: 3.25rem;
+        }
+
+        p {
+          font-size: 1.65rem;
+        }
+      }
+    }
+
+    .showcase__content__section3 {
+      .section3__textContent__col {
+        .companiesOfferings {
+          font-size: 1.15rem;
+        }
+
+        h4 {
+          font-size: 3.25rem;
+        }
+
+        p {
+          font-size: 1.65rem;
+        }
+      }
+    }
   }
 }
 
