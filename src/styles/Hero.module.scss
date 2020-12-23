@@ -485,7 +485,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767.99px) {
   .hero__container {
     .intro__header {
       top: 50%;
@@ -573,7 +573,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
   .hero__container {
     .intro__header {
       top: 50%;
