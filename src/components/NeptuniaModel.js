@@ -7,7 +7,7 @@ const NeptuniaModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const neptunia = useRef()
 
-  const gltf = useLoader(GLTFLoader, "/models/aeinnptu.glb")
+  const gltf = useLoader(GLTFLoader, "/models/neptunia.glb")
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
 
