@@ -1,8 +1,7 @@
-import React from "react"
-import styles from "../styles/MessageCard.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import styled from "styled-components"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
 const Card = styled.div`
   box-sizing: border-box;
@@ -12,7 +11,7 @@ const Card = styled.div`
   border-radius: 12px;
   margin-bottom: 0.75rem;
   filter: opacity(${({ sent }) => (sent === true ? "0.6" : "1")});
-`
+`;
 
 const Avatar = styled.div`
   width: 4.5rem;
@@ -22,7 +21,7 @@ const Avatar = styled.div`
   margin: 0 auto;
   margin-bottom: 1rem;
   background-color: #121212;
-`
+`;
 
 const CardInfo = styled.div`
   width: 100%;
@@ -30,7 +29,7 @@ const CardInfo = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`
+`;
 
 const FirstSpacedRow = styled.div`
   height: 1rem;
@@ -38,7 +37,7 @@ const FirstSpacedRow = styled.div`
   background-color: #777;
   border-radius: 4px;
   margin-bottom: 0.5rem;
-`
+`;
 
 const SecondSpacedRow = styled.div`
   display: flex;
@@ -46,7 +45,7 @@ const SecondSpacedRow = styled.div`
   width: 70%;
   margin: 0 auto;
   margin-bottom: 1rem;
-`
+`;
 
 const EmptyFiller = styled.div`
   height: 1rem;
@@ -57,7 +56,7 @@ const EmptyFiller = styled.div`
   &:first-of-type {
     margin-right: 0.5rem;
   }
-`
+`;
 
 const CardStatusWrapper = styled.div`
   justify-self: center;
@@ -84,7 +83,7 @@ const CardStatusWrapper = styled.div`
     text-transform: uppercase;
     font-weight: 600;
   }
-`
+`;
 
 export default function MessageCard({ sent }) {
   return (
@@ -102,5 +101,5 @@ export default function MessageCard({ sent }) {
         </CardStatusWrapper>
       </CardInfo>
     </Card>
-  )
+  );
 }

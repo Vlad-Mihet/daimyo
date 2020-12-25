@@ -19,6 +19,8 @@
 
   .textColumn {
     flex: 1;
+    text-align: left;
+
     h3,
     p {
       font-family: $Montserrat;
@@ -29,7 +31,7 @@
       font-size: 2.75rem;
       margin: 0;
       font-weight: 700;
-      margin-bottom: 3rem;
+      margin-bottom: 7.5rem;
     }
 
     p {
@@ -416,7 +418,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767.98px) {
   .about__container {
     min-height: 160vh;
 
@@ -489,7 +491,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .about__container {
     min-height: 120vh;
     .about__wrapper {

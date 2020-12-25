@@ -2,7 +2,7 @@
 
 .whatMakesUsDifferent__container {
   width: 100%;
-  min-height: 305vh;
+  min-height: 200vh;
   position: relative;
   background-color: #121212;
 
@@ -369,6 +369,7 @@
     }
 
     .textContent__col {
+      text-align: left;
       flex: 1;
       font-family: $Montserrat;
 
@@ -405,11 +406,13 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 60vh;
+
+    margin-top: 20vh;
     width: 70%;
     margin-left: 20%;
 
     .section2__textContent__col {
+      text-align: left;
       margin-right: 5%;
       width: 40%;
       font-family: $Montserrat;
@@ -500,12 +503,13 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 60vh;
+    margin-top: 15vh;
     width: 70%;
     margin-left: 15%;
     font-family: $Montserrat;
 
     .section3__textContent__col {
+      text-align: left;
       flex: 1;
 
       .companiesOfferings {
@@ -971,7 +975,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .whatMakesUsDifferent__container {
     min-height: 380vh;
     .about__wrapper {

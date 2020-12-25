@@ -1,9 +1,9 @@
-import React from "react"
-import { Doughnut, Bar } from "react-chartjs-2"
+import React from "react";
+import { Doughnut } from "react-chartjs-2";
 
 class Chart extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       chartData: {
         datasets: [
@@ -24,7 +24,7 @@ class Chart extends React.Component {
           },
         ],
       },
-    }
+    };
   }
 
   render() {
@@ -50,8 +50,8 @@ class Chart extends React.Component {
           }}
         />
       </div>
-    )
+    );
   }
 }
 
-export default Chart
+export default Chart;

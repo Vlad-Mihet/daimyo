@@ -1,8 +1,7 @@
-import React from "react"
-import styles from "../styles/JoinUs.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
-import { Link } from "gatsby"
+import React from "react";
+import styles from "../styles/JoinUs.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function JoinUs({ setShowModal }) {
   return (
@@ -14,13 +13,16 @@ export default function JoinUs({ setShowModal }) {
           digital talent. Contact our recruiting experts with questions and
           comments
         </p>
-        <Link to="https://forms.gle/6VPSNwjiuwVM9oYz8" target="_blank">
+        <a
+          href="https://forms.gle/6VPSNwjiuwVM9oYz8"
+          target="_blank"
+          rel="noreferrer">
           <div className={styles.signupButton}>
             <span>SIGN UP</span>
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
-        </Link>
+        </a>
       </div>
     </div>
-  )
+  );
 }

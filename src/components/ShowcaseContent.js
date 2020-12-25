@@ -1,12 +1,16 @@
-import React from "react"
-import styles from "../styles/ShowcaseContent.module.scss"
-import MessageCard from "./MessageCard"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import styles from "../styles/ShowcaseContent.module.scss";
+import MessageCard from "./MessageCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
   faMapMarkerAlt,
   faCheck,
-} from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-solid-svg-icons";
+import Akali from "./Akali";
+import Monokuma from "./Monokuma";
+import Squirtle from "./Squirtle";
+import Neptunia from "./Neptunia";
 
 export default function ShowcaseContent() {
   return (
@@ -20,7 +24,8 @@ export default function ShowcaseContent() {
         </p>
       </div>
       <div className={styles.showcase__content}>
-        <div className={styles.design__col}>
+        <Monokuma />
+        {/* <div className={styles.design__col}>
           <div className={styles.jobPost__showcase__wrapper}>
             <div className={styles.empty__spaces__wrapper}>
               <div className={styles.empty__space}></div>
@@ -100,7 +105,7 @@ export default function ShowcaseContent() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.textContent__col}>
           <span className={styles.companiesOfferings}>
             For Companies, We Offer
@@ -127,7 +132,8 @@ export default function ShowcaseContent() {
             work.
           </p>
         </div>
-        <div className={styles.section2__cards__col}>
+        <Squirtle />
+        {/* <div className={styles.section2__cards__col}>
           <div className={styles.cardsWrapper}>
             <div className={styles.cardsCol}>
               <MessageCard />
@@ -146,13 +152,17 @@ export default function ShowcaseContent() {
             </div>
           </div>
         </div>
+       */}
       </div>
       <div className={styles.showcase__content__section3}>
-        <div className={styles.section3__animation__col}>
+        {/* <div className={styles.section3__animation__col}>
           <div className={styles.cards__wrapper}>
             <div className={styles.firstCardWrapper}>
               <div className={styles.firstCardAvatar}>
-                <img src={require("../images/samurai.png")} />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/samurai.png"}
+                  alt="samurai"
+                />
               </div>
               <div className={styles.firstCard}>
                 <div className={styles.firstCard__fillerRow__wrapper}>
@@ -226,7 +236,8 @@ export default function ShowcaseContent() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Neptunia />
         <div className={styles.section3__textContent__col}>
           <span className={styles.companiesOfferings}>
             For Companies, We Created
@@ -240,5 +251,5 @@ export default function ShowcaseContent() {
         </div>
       </div>
     </div>
-  )
+  );
 }

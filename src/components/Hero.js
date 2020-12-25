@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../styles/Hero.module.scss"
-import { Link } from "gatsby"
 
 export default function Hero({ setShowModal }) {
   return (
@@ -15,48 +14,52 @@ export default function Hero({ setShowModal }) {
           growing artists community of pre-qualified, professional creative
           talent.
         </p>
-        <Link to="https://forms.gle/6VPSNwjiuwVM9oYz8" target="_blank">
+        <a
+          href="https://forms.gle/6VPSNwjiuwVM9oYz8"
+          target="_blank"
+          rel="noreferrer"
+        >
           Join
-        </Link>
+        </a>
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper1}>
-        <img src={require(`../images/1.jpg`)} alt="1" />
+        <img src={"/images/1.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper2}>
-        <img src={require(`../images/2.jpg`)} alt=" 2" />
+        <img src={"/images/2.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper3}>
-        <img src={require(`../images/3.jpg`)} alt=" 3" />
+        <img src={"/images/3.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper4}>
-        <img src={require(`../images/4.jpg`)} alt="4" />
+        <img src={"/images/4.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper5}>
-        <img src={require(`../images/5.jpg`)} alt="5" />
+        <img src={"/images/5.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper6}>
-        <img src={require(`../images/6.jpg`)} alt="6" />
+        <img src={"/images/6.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper7}>
-        <img src={require(`../images/7.jpg`)} alt="7" />
+        <img src={"/images/7.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper8}>
-        <img src={require(`../images/8.jpg`)} alt="8" />
+        <img src={"/images/8.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper9}>
-        <img src={require(`../images/9.jpg`)} alt="9" />
+        <img src={"/images/9.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper10}>
-        <img src={require(`../images/10.jpg`)} alt="10" />
+        <img src={"/images/10.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper11}>
-        <img src={require(`../images/11.jpg`)} alt="11" />
+        <img src={"/images/11.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper12}>
-        <img src={require(`../images/12.jpg`)} alt="12" />
+        <img src={"/images/12.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper13}>
-        <img src={require(`../images/13.jpg`)} alt="13" />
+        <img src={"/images/13.jpg"} alt="" />
       </div>
     </div>
   )

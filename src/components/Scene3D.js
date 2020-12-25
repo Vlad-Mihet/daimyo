@@ -1,56 +1,27 @@
-import React, { Component } from "react"
-import * as THREE from "three"
+import React, { Suspense, useRef } from "react"
+import { Canvas, useFrame, useLoader } from "react-three-fiber"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
-export default class Scene3D extends Component {
-  componentDidMount() {
-    var scene = new THREE.Scene()
-    scene.background = new THREE.Color(0x000000)
-    var camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    )
+const Scene3D = () => {
+  const model = useRef()
 
-    var width = 100
-    var height = 100
-    var intensity = 1.4
-    var rectLight = new THREE.RectAreaLight(0x333333, intensity, width, height)
-    rectLight.position.set(1, 1, 10)
-    rectLight.lookAt(1, 1, 3)
-    scene.add(rectLight)
+  const { nodes } = useLoader(GLTFLoader, "models/model.glb")
 
-    let renderer = new THREE.WebGLRenderer({ antialias: true })
-    renderer.setSize(window.innerWidth, window.innerHeight)
-
-    document
-      .getElementsByClassName("three-canvas")[0]
-      .appendChild(renderer.domElement)
-
-    camera.position.z = 5
-    var animate = function () {
-      requestAnimationFrame(animate)
-      renderer.render(scene, camera)
-    }
-
-    let loader = new GLTFLoader()
-    loader.load(
-      "../../static/model.glb",
-      gltf => {
-        // called when the resource is loaded
-        console.log(gltf.scene)
-      },
-      xhr => {
-        console.log(xhr)
-        // called while loading is progressing
-        // console.log("The xhr warning isL ",xhr.srcElement.responseText);
-      }
-    )
-
-    animate()
-  }
-  render() {
-    return <div className="three-canvas"></div>
-  }
+  useFrame(() => (model.current.rotation.y += 0.0002))
+  return (
+    <Canvas className="canvas">
+      <Suspense fallback={<div>Loading...</div>}>
+        <mesh
+          ref={model}
+          visible
+          position={[0, 0, 0]}
+          // Adding data from mars.glb to the geometry and material of the sphere
+          geometry={nodes.Cube008.geometry}
+          material={nodes.Cube008.material}
+        />
+      </Suspense>
+    </Canvas>
+  )
 }
+
+export default Scene3D

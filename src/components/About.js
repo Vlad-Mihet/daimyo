@@ -1,7 +1,8 @@
-import React from "react"
-import styles from "../styles/About.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck, faQuestion } from "@fortawesome/free-solid-svg-icons"
+import React from "react";
+import styles from "../styles/About.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faQuestion } from "@fortawesome/free-solid-svg-icons";
+import Akali from "./Akali";
 
 export default function About() {
   return (
@@ -23,10 +24,14 @@ export default function About() {
             match.
           </p>
         </div>
-        <div className={styles.animationColumn}>
+        <Akali />
+        {/* <div className={styles.animationColumn}>
           <div className={styles.cardContainer}>
             <div className={styles.card__author}>
-              <img src={require("../images/samurai.png")} alt="Samurai" />
+              <img
+                src={process.env.PUBLIC_URL + "/images/samurai.png"}
+                alt="samurai"
+              />
             </div>
             <div className={styles.card}>
               <p>
@@ -90,8 +95,8 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
-  )
+  );
 }

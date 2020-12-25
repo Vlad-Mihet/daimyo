@@ -31,7 +31,6 @@ export default function Home() {
     <div style={{ overflow: "hidden" }}>
       <Header />
       <Hero />
-      {/* <Scene3D /> */}
       <About />
       <ShowcaseContent />
       <Features />
