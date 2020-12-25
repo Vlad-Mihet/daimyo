@@ -7,7 +7,7 @@ import {
   faMapMarkerAlt,
   faCheck,
 } from "@fortawesome/free-solid-svg-icons"
-import Monokuma from "./components/Monokuma"
+import Monokuma from "./Monokuma"
 import Squirtle from "./Squirtle"
 import Neptunia from "./Neptunia"
 
