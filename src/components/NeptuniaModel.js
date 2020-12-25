@@ -2,13 +2,12 @@ import React, { useRef, useState } from "react"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useLoader } from "react-three-fiber"
 import * as THREE from "three"
-import model from "../../static/models/neptunia.glb"
 
 const NeptuniaModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const neptunia = useRef()
 
-  const gltf = useLoader(GLTFLoader, model)
+  const gltf = useLoader(GLTFLoader, "/models/aeinnptu.glb")
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
 
