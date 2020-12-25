@@ -7,7 +7,10 @@ const SquirtleModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const squirtle = useRef()
 
-  const gltf = useLoader(GLTFLoader, "/models/squirtle.glb")
+  const gltf = useLoader(
+    GLTFLoader,
+    `${process.env.PUBLIC_URL}/models/squirtle.glb`
+  )
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
   return (

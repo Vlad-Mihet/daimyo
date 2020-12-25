@@ -7,7 +7,10 @@ const AkaliModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const akali = useRef()
 
-  const gltf = useLoader(GLTFLoader, "/models/akali.glb")
+  const gltf = useLoader(
+    GLTFLoader,
+    `${process.env.PUBLIC_URL}/models/akali.glb`
+  )
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
 

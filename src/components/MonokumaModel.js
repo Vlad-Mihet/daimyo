@@ -7,7 +7,10 @@ const MonokumaModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const monokuma = useRef()
 
-  const gltf = useLoader(GLTFLoader, "/models/monokuma.glb")
+  const gltf = useLoader(
+    GLTFLoader,
+    `${process.env.PUBLIC_URL}/models/monokuma.glb`
+  )
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
 

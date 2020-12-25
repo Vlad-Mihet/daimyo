@@ -23,43 +23,43 @@ export default function Hero({ setShowModal }) {
         </a>
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper1}>
-        <img src={"/images/1.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/1.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper2}>
         <img src={"/images/2.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper3}>
-        <img src={"/images/3.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/3.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper4}>
-        <img src={"/images/4.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/4.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper5}>
-        <img src={"/images/5.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/5.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper6}>
-        <img src={"/images/6.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/6.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper7}>
-        <img src={"/images/7.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/7.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper8}>
-        <img src={"/images/8.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/8.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper9}>
-        <img src={"/images/9.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/9.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper10}>
-        <img src={"/images/10.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/10.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper11}>
-        <img src={"/images/11.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/11.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper12}>
-        <img src={"/images/12.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/12.jpg"} alt="" />
       </div>
       <div data-speed="5" className={styles.hero__image__wrapper13}>
-        <img src={"/images/13.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/images/13.jpg"} alt="" />
       </div>
     </div>
   )
