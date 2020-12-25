@@ -1,16 +1,15 @@
-import React from "react";
-import styles from "../styles/ShowcaseContent.module.scss";
-import MessageCard from "./MessageCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import styles from "../styles/ShowcaseContent.module.scss"
+import MessageCard from "./MessageCard"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faSearch,
   faMapMarkerAlt,
   faCheck,
-} from "@fortawesome/free-solid-svg-icons";
-import Akali from "./Akali";
-import Monokuma from "./Monokuma";
-import Squirtle from "./Squirtle";
-import Neptunia from "./Neptunia";
+} from "@fortawesome/free-solid-svg-icons"
+import Monokuma from "./components/Monokuma"
+import Squirtle from "./Squirtle"
+import Neptunia from "./Neptunia"
 
 export default function ShowcaseContent() {
   return (
@@ -251,5 +250,5 @@ export default function ShowcaseContent() {
         </div>
       </div>
     </div>
-  );
+  )
 }

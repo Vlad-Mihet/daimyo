@@ -1,0 +1,12 @@
+@import "./variables";
+
+.canvasWrapper {
+  height: 70vh;
+  width: 35%;
+  .canvas {
+    pointer-events: none;
+    user-select: none;
+    scroll-behavior: none;
+    overflow: hidden;
+  }
+}

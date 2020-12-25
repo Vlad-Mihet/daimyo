@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "../styles/About.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faQuestion } from "@fortawesome/free-solid-svg-icons";
-import Akali from "./Akali";
+import React from "react"
+import styles from "../styles/About.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck, faQuestion } from "@fortawesome/free-solid-svg-icons"
+import Akali from "./Akali"
 
 export default function About() {
   return (
@@ -98,5 +98,5 @@ export default function About() {
         </div> */}
       </div>
     </div>
-  );
+  )
 }
