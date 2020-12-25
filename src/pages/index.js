@@ -11,8 +11,6 @@ import Analytics from "../components/Analytics"
 import Status from "../components/Status"
 import Subscription from "../components/Subscription.js"
 import JoinUs from "../components/JoinUs"
-import JoinModal from "../components/JoinModal"
-import Scene3D from "../components/Scene3D"
 
 const HomeContainer = styled.div`
   ${({ blurred }) => blurred && `filter: brightness(20%); overflow-y: hidden;`};

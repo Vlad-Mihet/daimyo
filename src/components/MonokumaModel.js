@@ -2,15 +2,13 @@ import React, { useRef, useState } from "react"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useLoader } from "react-three-fiber"
 import * as THREE from "three"
+import model from "../../static/models/monokuma.glb"
 
 const MonokumaModel = () => {
   const [rotationDeg, setRotationDeg] = useState(0)
   const monokuma = useRef()
 
-  const gltf = useLoader(
-    GLTFLoader,
-    `${process.env.PUBLIC_URL}/models/monokuma.glb`
-  )
+  const gltf = useLoader(GLTFLoader, model)
 
   useFrame(() => setRotationDeg(rotationDeg + 0.01))
 
