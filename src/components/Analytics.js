@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../styles/Analytics.module.scss"
-import WorldMap from "./WorldMap"
 import Chart from "./DoughnutChart"
 import DataLabel from "./DataLabel"
 
@@ -19,9 +18,9 @@ export default function Analytics() {
   ]
   return (
     <div className={styles.analytics__container}>
-      <div className={styles.mapData__wrapper}>
-        <span>We have Artists From All Around The World</span>
-        <WorldMap />
+      <div className={styles.analytics__header}>
+        <h3>Available Positions</h3>
+        <span>Apply For A Position And Join Our Team</span>
       </div>
       <div className={styles.doughnutData__wrapper}>
         <Chart />
@@ -36,7 +35,6 @@ export default function Analytics() {
           />
         ))}
       </div>
-      <span className={styles.breakdownBy}>Breakdown By Design Specialty</span>
     </div>
   )
 }

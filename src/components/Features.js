@@ -8,7 +8,6 @@ import {
   faSuitcase,
   faUserTie,
   faRocket,
-  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 
 export default function Features() {
@@ -66,7 +65,6 @@ export default function Features() {
                 Job description and details you are looking for in an ideal
                 candidate and send a questionnaire to employment-ready artists.
               </p>
-              <span className={styles.block__count}>1</span>
             </div>
             <div className={styles.useGuide__block}>
               <div className={styles.block__wrapper}>
@@ -78,7 +76,6 @@ export default function Features() {
                 access to the searchable Artists Community Database of
                 qualified, hand-selected creative professionals.
               </p>
-              <span className={styles.block__count}>2</span>
             </div>
             <div className={styles.useGuide__block}>
               <div className={styles.block__wrapper}>
@@ -90,12 +87,7 @@ export default function Features() {
                 Questionnaire, interview them, and hire the best candidate as
                 your new creative team member!
               </p>
-              <span className={styles.block__count}>3</span>
             </div>
-          </div>
-          <div className={styles.getStarted}>
-            <span>Get Started Now</span>
-            <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
       </div>

@@ -3,32 +3,10 @@
 .status__container {
   position: relative;
   width: 100%;
-  min-height: 290vh;
+  min-height: 250vh;
   background-color: #121212;
   box-sizing: border-box;
-  padding-top: 15vh;
-
-  .status__header {
-    margin: 0 auto;
-    margin-bottom: 20vh;
-    width: fit-content;
-    text-align: center;
-    font-family: $Montserrat;
-
-    h3 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      width: fit-content;
-      color: #f8f8f8;
-      margin: 0;
-    }
-
-    span {
-      font-weight: 500;
-      font-size: 1.35rem;
-      color: #c8c8c8;
-    }
-  }
+  padding-top: 10vh;
 
   .cards__wrapper {
     width: 65%;
@@ -172,7 +150,7 @@
 
 @media only screen and (max-width: 600px) {
   .status__container {
-    min-height: 385vh;
+    min-height: 260vh;
     padding: 0;
 
     .status__header {

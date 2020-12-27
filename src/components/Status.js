@@ -16,10 +16,6 @@ export default function Status({ setupQuickApply }) {
   ]
   return (
     <div className={styles.status__container}>
-      <div className={styles.status__header}>
-        <h3>Available Positions</h3>
-        <span>Apply For A Position And Join Our Team</span>
-      </div>
       <div className={styles.cards__wrapper}>
         {categories.map((category, index) => (
           <StatusCard

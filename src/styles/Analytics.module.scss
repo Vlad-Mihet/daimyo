@@ -3,26 +3,27 @@
 .analytics__container {
   background-color: #121212;
   width: 100%;
-  min-height: 200vh;
+  min-height: 80vh;
   position: relative;
 
-  .mapData__wrapper {
-    position: absolute;
-    top: 10vh;
-    left: 17.5%;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
+  .analytics__header {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    font-family: $Montserrat;
+
+    h3 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      width: fit-content;
+      color: #f8f8f8;
+      margin: 0;
+    }
 
     span {
-      text-align: center;
-      font-family: $Montserrat;
-      font-size: 2.75rem;
-      font-weight: 600;
-      color: #fff;
-      width: 50%;
-      margin: 0 auto;
-      margin-bottom: 15vh;
+      font-weight: 500;
+      font-size: 1.35rem;
+      color: #c8c8c8;
     }
   }
 
@@ -30,14 +31,14 @@
     position: absolute;
     height: 5vh;
     width: 25%;
-    bottom: 60vh;
+    bottom: 50vh;
     left: 25%;
     margin: 0 auto;
   }
 
   .doughnutChart__dataWrapper {
     position: absolute;
-    bottom: 24vh;
+    bottom: 13vh;
     right: 20%;
     display: flex;
     flex-direction: column;
@@ -86,30 +87,27 @@
 
 @media only screen and (max-width: 600px) {
   .analytics__container {
-    min-height: 240vh;
-    .mapData__wrapper {
-      width: 95%;
-      margin: 0 auto;
-      position: relative;
-      left: unset;
-      top: unset;
+    min-height: 140vh;
 
-      span {
-        width: 100%;
+    .analytics__header {
+      padding-top: 5vh;
+      h3 {
+        font-size: 2rem;
       }
+      width: 87.5%;
     }
 
     .doughnutData__wrapper {
       height: 10vh;
       width: 80%;
-      top: 102.5vh;
+      top: 20vh;
       bottom: unset;
       left: 10%;
     }
 
     .doughnutChart__dataWrapper {
       right: unset;
-      bottom: 30vh;
+      bottom: 20vh;
       left: 15%;
       width: 95%;
     }
