@@ -155,7 +155,7 @@
       flex-direction: column;
       left: 2.5%;
       bottom: unset;
-      height: 110%;
+      height: fit-content;
       top: 25vh;
 
       .subscriptionBlock {
@@ -163,6 +163,10 @@
         padding: 1.5rem 1rem;
         margin-bottom: 1.5rem;
         height: fit-content;
+
+        &:hover {
+          pointer-events: none;
+        }
       }
     }
   }
@@ -186,6 +190,10 @@
       .subscriptionBlock {
         margin-right: 0;
         margin-bottom: 1.5rem;
+
+        &:hover {
+          pointer-events: none;
+        }
       }
     }
   }
@@ -199,6 +207,12 @@
       bottom: unset;
       top: 25vh;
       height: 90%;
+
+      .subscriptionBlock {
+        &:hover {
+          pointer-events: none;
+        }
+      }
     }
   }
 }
